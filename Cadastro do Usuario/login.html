@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        header nav {
+            justify-content: center;
+        }
+        
+        header .container{
+            justify-content: center;           
+        }
+        #botton p{        
+        font-size: 30px;
+        border-radius: 15px;
+        padding: 0 10px;
+        width: 88px;
+       
+         }
+        .forgotpass{
+        text-decoration:underline;    
+        }
+
+    </style>
+    
+</head>
+<body>
+    <header> 
+        <nav id="head">
+        <img class="left-logo" id="Calafate" src="img/calafate-logo.svg" alt="Calafate Logo">
+        </nav>
+            <div class="container">
+                <label for="email">Email:</label>
+                  <input type="email" name="email" id="email">
+                  <label for="senha">Senha:</label>
+                     <div id="pass">               
+                     <input type="password" id="passw">         
+                     <i class="bi bi-eye-fill" id="btn-pass" onclick="showPass()"> </i>                                       
+                     <div id="remember">
+                        <input type="checkbox">
+                        Lembre-se de mim 
+
+                     </div>
+                         <div id="panel">
+                             <div id="botton">                                
+                                 <p>Entrar</p>
+                             </div>
+                             <p class="forgotpass">Esqueceu sua senha?</p>
+
+                             <p class="login">Não tem uma conta? </p>
+                             <a id="login" href="register.html" class="login"> Cadastrar.</a>
+                         </div>
+            
+                     </div>
+           </div>
+    </header>
+    <script src="showPass.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        header nav {
+            justify-content: center;
+        }
+        
+        header .container{
+            justify-content: center;           
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <header> 
+        <nav id="head">
+        <img class="left-logo" id="Calafate" src="img/calafate-logo.svg" alt="Calafate Logo">
+        </nav>
+            <div class="container">
+                <label for="email">Email:</label>
+                  <input type="email" name="email" id="email">
+                  <label for="senha">Senha:</label>
+                     <div id="pass">               
+                     <input type="password" id="passw">         
+                     <i class="bi bi-eye-fill" id="btn-pass" onclick="showPass()"> </i>                                       
+                     <p>Ao clicar em "Criar uma conta" ou ao se registrar, você concorda com as <br>
+                     Condições de
+                     uso e a Política de Privacidade.</p>
+                         <div id="panel">
+                             <div id="botton">
+                                 <p> Criar uma conta </p>
+                             </div>
+                             <p class="entrar">Já tem uma conta? </p>
+                             <a id="login" href="login.html" class="entrar"> Entrar.</a>
+                         </div>
+            
+                     </div>
+           </div>
+    </header>
+    <script src="showPass.js"></script>
+</body>
+
+</html>
