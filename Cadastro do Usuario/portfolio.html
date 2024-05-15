@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calafate</title>
+    <Style>
+        header {
+            width: 100%;
+            height:auto;
+            background-color: #302D2E;
+        }
+
+        header nav {
+            width: auto;
+            height: auto;
+            background-color: #302D2E;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        header nav img {
+            background-color: #302D2E;
+            max-height: 40px;
+        }
+
+        .left-logo{
+            background-color: #302D2E;
+            max-height: 140px;
+        }
+        
+        #local{
+            height: 40px;
+            background-color: #302D2E;
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            margin-left: 50px;
+            
+    
+            #localization-logo{
+                height: 50px;
+            }
+    
+            #cep{
+                color: #fff;
+                margin-top: 10%;
+                align-items: center;
+                background-color: #302D2E;
+            }
+            
+            /* 
+            O &:hover referencia o próprio pai no nesting
+            ou seja aqui está basicamente dizendo que 
+            o #local irá receber um :hover 
+            */
+    
+            &:hover{
+                opacity: 50%;
+    
+            }
+        }
+
+        #searchBar{
+            background-color: #fff;
+            width: 700px;
+            height: 40px;
+            border-radius: 50px;
+            border-style: none;
+            margin-left: 170px;
+            margin-right: 100px;
+        }
+
+        img{
+            height: 30%;
+            background-color: #302D2E;
+            color: #fff;
+    
+        }
+
+        .art-fav-shop{
+            margin: 0 10px ;
+        }
+
+        #perfil{
+            text-decoration: none;
+            background-color: #302D2E;
+            display: flex;
+            flex-direction: row;
+            margin-left: 200px;
+    
+            .cad-enter{
+                background-color: #302D2E;
+                color: #fff;
+                margin-top: 10%;
+            }
+            img{
+                height: 50px;
+            }
+    
+            #cad:hover{
+                color: #B4A2A4;
+            }
+
+            #ent:hover{
+                color: #B4A2A4;
+            }
+        }
+
+        header footer {
+            background-color: #4D4D4F;
+            height: auto;
+        }
+    </Style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="left-logo" id="Calafate" src="img/calafate-logo.svg" alt="Calafate Logo">
+            <a id="local" href="address.html">  
+                <img id="localization-logo" src="img/localization-logo.svg" alt="Localization Icon" >
+                <div id="cep"> Informe seu CEP </div></a>
+            <input type="text" name="searchBar" id="searchBar">
+            <img class="art-fav-shop" src="img/artists-logo.svg" alt="Art Market Icon">
+            <img class="art-fav-shop" src="img/fav-logo.svg" alt="Favorite Icon">
+            <img class="art-fav-shop" src="img/market-logo.svg" alt="Market Icon">
+           
+            <div id="perfil">
+                <div id="enter" class="cad-enter"></div>
+                <a id="ent" href="login.html" class="cad-enter">Entrar/</a>
+                <a id="cad" href="register.html" class="cad-enter">Cadastrar</a>
+                <img src="img/perfil-logo.svg" alt="Profile Icon">
+            </div>
+        </nav>
+        <footer>
+            <nav>
+                <a id="paints" href="pinturas.html">Pinturas</a>
+                <a href="esculturas.html"> Esculturas</a>
+                <a href="fotografias.html">Fotografias </a>
+                <a href="desenhos.htmkl"> Desenhos </a>
+                <a href="impressoesGravuras.html"> Impressões e Gravuras</a>
+                <a href="artesDigitais.html"> Artes Digitais</a>
+                <a href="colagens.html"> Colagens</a>
+                <a href="textos.html"> Artes Têxtil</a>
+                <a href="design.html"> Design</a>
+            </nav>
+        </footer>
+    </header>
+    <body>
+        
+    </body>
+    <footer>
+
+    </footer>
+</body>
+</html>
