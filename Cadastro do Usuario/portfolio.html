@@ -113,7 +113,131 @@
             background-color: #4D4D4F;
             height: auto;
         }
+
+        /*body*/
+        #user-bio{
+            width: 90%;
+            height: auto;
+            min-height: 50px;
+            background-color: white;
+            margin-top: 50px;
+            margin-left: 5%;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        /*#user-bio div{
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }*/
+
+        #profile-main {
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #profile-img {
+            background-color: gray;
+            width: 20%;
+            height: 30%;
+            border-radius: 100%;
+        }
+        
+        #profile-text {
+            background-color: gray;
+            width: 100%;
+            height: 500px;
+        }
+
+        #links-text {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #linkBtn {
+            margin-left: 5px;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+        }
+
+        /*Modal dos links do artista */
+        /*Background do modal*/
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        .links-modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 40%; /* Could be more or less, depending on screen size */
+            height: auto;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            animation-name: animatetop;
+            animation-duration: 0.4s;
+        }
+
+        @keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0;
+            }
+            to {
+                top: 0;
+                opacity: 1;
+            }
+        }
+
+        .close {
+            color: #000;
+            background-color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /*Header do modal*/
+        #links-modal-header, #links-modal-header h2 {
+            padding: 2px 16px;
+            background-color: white;
+        }
+
+        /*Body do modal*/
+        #links-modal-body, #links-modal-body p {
+            padding: 2px 16px;
+            background-color: white;
+        }
+
+        #profile-rating {
+            width: 30%;
+            margin-right: 5px;
+            
+        }
     </Style>
+    
 </head>
 <body>
     <header>
@@ -149,7 +273,37 @@
         </footer>
     </header>
     <body>
-        
+        <div id="user-bio">
+            <div id="profile-main">
+                <div id="profile-img">placeholder</div>
+                <div id="profile-text">
+                    <h1>Luiza Fagundes</h1>
+                    <p>placeholder</p>
+                    <div id="links-text">
+                        <nav>
+                            <a href="https://www.youtube.com/watch?v=SA6Bq5rimJs&list=PLtn_SWQM4anUZ2l-MSfZSAQJPJuI_bxxT&index=4">instagram.com/hozier</a>
+                        </nav>
+                        <button id="linkBtn">e mais links ▶</button>
+                        
+                        <!-- Modal -->
+                        <div id="links-modal" class="modal">
+                            <!-- Conteúdo do modal -->
+                            <div class="links-modal-content">
+                                <div id="links-modal-header">
+                                    <span class="close">&times;</span>
+                                    <h2>Links</h2>
+                                </div>
+                                <div id="links-modal-body">
+                                    <p>placeholder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <script src="./src/links-modal.js"></script>
+                    </div>
+                </div>
+            </div>
+            <div id="profile-rating"></div>
+        </div>
     </body>
     <footer>
 
