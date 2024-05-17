@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Cadastro do Usuario/style.css">
     <title>Calafate</title>
     <Style>
         header {
@@ -72,13 +72,12 @@
             margin-left: 170px;
             margin-right: 100px;
         }
-
+        /*
         img{
             height: 30%;
             background-color: #302D2E;
             color: #fff;
-    
-        }
+        }*/
 
         .art-fav-shop{
             margin: 0 10px ;
@@ -138,31 +137,110 @@
             width: 70%;
             display: flex;
             flex-direction: row;
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            background-color: #fff;
         }
 
         #profile-img {
             background-color: gray;
-            width: 20%;
-            height: 30%;
+            width: 125px;
+            height: 115px;
             border-radius: 100%;
+            margin-left: 5px;
+            margin-top: 5px;
         }
         
         #profile-text {
-            background-color: gray;
+            background-color: white;
             width: 100%;
-            height: 500px;
+            height: auto;
+            margin-left: 5px;
+            margin-right: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+
+            #user-name {
+                background-color: white;
+            }
+
+            #user-btns {
+                display: flex;
+                flex-direction: row;
+                background-color: #fff;
+            }
+
+            #user-btns-follow {
+                background-color: #302D2E;
+                color: #fff;
+                display: flex;
+                flex-direction: row;
+                width: auto;
+                height: 50px;
+                border-radius: 10px;
+                margin-right: 10px;
+                align-items: center;
+                cursor: pointer;
+
+                img {
+                    background-color: #302D2E;
+                    width: 40px;
+                    height: 100%;
+                }
+
+                p {
+                    background-color: #302D2E;
+                    margin-right: 5px;
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                }
+            }
+
+            #user-btns-chat {
+                background-color: #302D2E;
+                cursor: pointer;
+                border-radius: 10px;
+                margin-right: 10px;
+                
+                img {
+                    background-color: #302D2E;
+                    margin: 0 5px;
+                }
+            }
+
+            #user-btns-more {
+                background-color: #302D2E;
+                color: #fff;
+                border-radius: 10px;
+
+                p {
+                    background-color: #302D2E;
+                    font-size: 1.9rem;
+                    margin: 0 5px;
+                }
+            }
         }
 
         #links-text {
             display: flex;
             flex-direction: row;
-        }
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            background-color: #fff;
+            
+            a {
+                background-color: #fff;
+            }
 
-        #linkBtn {
+            #linkBtn {
             margin-left: 5px;
             font-weight: 700;
             border: none;
             cursor: pointer;
+            background-color: #fff;
+            }
         }
 
         /*Modal dos links do artista */
@@ -220,21 +298,154 @@
         }
 
         /*Header do modal*/
-        #links-modal-header, #links-modal-header h2 {
+        #links-modal-header, 
+        #links-modal-header h2 {
             padding: 2px 16px;
             background-color: white;
         }
 
         /*Body do modal*/
-        #links-modal-body, #links-modal-body p {
+        #links-modal-body, 
+        #links-modal-body nav, 
+        #links-modal-body h4 {
             padding: 2px 16px;
             background-color: white;
         }
 
+        #links-modal-body a {
+            padding: 2px 16px;
+            background-color: white;
+            margin-top: 10px;
+        }
+        /*Fim do body do modal*/
+
+        /*biografia do usuário*/
+        #user-bio-text {
+            background-color: white;
+            text-align: justify;
+            text-indent: 50px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
         #profile-rating {
+            background-color: #fff;
             width: 30%;
             margin-right: 5px;
-            
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            #profile-rating-stars {
+                background-color: #fff;
+                margin-top: 10px;
+
+                h3, p {
+                    background-color: #fff;
+                }
+
+                /*Animação das estrelas*/
+                .rating {
+                    background-color: #fff;
+                    width: 200px;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    gap: 0.3rem;
+                    --stroke: #666;
+                    --fill: #ffc73a;
+                }
+
+                .rating input {
+                    appearance: unset;
+                }
+
+                .rating label {
+                    cursor: pointer;
+                }
+
+                .rating svg {
+                    background-color: #fff;
+                    width: 2rem;
+                    height: 2rem;
+                    overflow: visible;
+                    fill: transparent;
+                    stroke: var(--stroke);
+                    stroke-linejoin: bevel;
+                    stroke-dasharray: 12;
+                    animation: idle 4s linear infinite;
+                    transition: stroke 0.2s, fill 0.5s;
+                }
+
+                @keyframes idle {
+                from {
+                    stroke-dashoffset: 24;
+                }
+                }
+
+                .rating label:hover svg {
+                    stroke: var(--fill);
+                }
+
+                .rating input:checked ~ label svg {
+                    transition: 0s;
+                    animation: idle 4s linear infinite, yippee 0.75s backwards;
+                    fill: var(--fill);
+                    stroke: var(--fill);
+                    stroke-opacity: 0;
+                    stroke-dasharray: 0;
+                    stroke-linejoin: miter;
+                    stroke-width: 8px;
+                }
+
+                @keyframes yippee {
+                0% {
+                    transform: scale(1);
+                    fill: var(--fill);
+                    fill-opacity: 0;
+                    stroke-opacity: 1;
+                    stroke: var(--stroke);
+                    stroke-dasharray: 10;
+                    stroke-width: 1px;
+                    stroke-linejoin: bevel;
+                }
+
+                30% {
+                    transform: scale(0);
+                    fill: var(--fill);
+                    fill-opacity: 0;
+                    stroke-opacity: 1;
+                    stroke: var(--stroke);
+                    stroke-dasharray: 10;
+                    stroke-width: 1px;
+                    stroke-linejoin: bevel;
+                }
+
+                30.1% {
+                    stroke: var(--fill);
+                    stroke-dasharray: 0;
+                    stroke-linejoin: miter;
+                    stroke-width: 8px;
+                }
+
+                60% {
+                    transform: scale(1.2);
+                    fill: var(--fill);
+                }
+                }
+
+            }
+
+            #profile-rating-stats {
+                background-color: #fff;
+                margin-bottom: 10px;
+
+                h3, p, b {
+                    background-color: #fff;
+                }
+            }
         }
     </Style>
     
@@ -277,11 +488,16 @@
             <div id="profile-main">
                 <div id="profile-img">placeholder</div>
                 <div id="profile-text">
-                    <h1>Luiza Fagundes</h1>
-                    <p>placeholder</p>
+                    <h1 id="user-name">Luiza Fagundes</h1>
+                    <div id="user-btns">
+                        <button id="user-btns-follow"><img class="art-fav-shop" src="img/fav-logo.svg" alt="Favorite Icon"><p>Seguir</p></button>
+                        <button id="user-btns-chat"><img src="img/chat-logo.svg" alt="Chat Icon"></button>
+                        <button id="user-btns-more"><p>•••</p></button>
+                        
+                    </div>
                     <div id="links-text">
                         <nav>
-                            <a href="https://www.youtube.com/watch?v=SA6Bq5rimJs&list=PLtn_SWQM4anUZ2l-MSfZSAQJPJuI_bxxT&index=4">instagram.com/hozier</a>
+                            <a href="">instagram.com/luizafagundes123</a>
                         </nav>
                         <button id="linkBtn">e mais links ▶</button>
                         
@@ -294,15 +510,55 @@
                                     <h2>Links</h2>
                                 </div>
                                 <div id="links-modal-body">
-                                    <p>placeholder</p>
+                                    <nav>
+                                        <h4>Twitter</h4>
+                                        <a href="">https://twitter.com/luizafagundes123</a>
+                                        <h4>Youtube</h4>
+                                        <a href="">https://www.youtube.com/c/LuizaFagundes123</a>
+                                        <h4>Patreon</h4>
+                                        <a href="">https://www.patreon.com/luizafagundes123</a>
+                                    </nav>
                                 </div>
                             </div>
                         </div>
                         <script src="./src/links-modal.js"></script>
                     </div>
+                    <p id="user-bio-text">Meu nome é Luiza Fagundes e sou uma artista visual brasileira, em busca de minha própria voz criativa neste vasto mundo da arte. Recebi meu diploma em Belas Artes pela Universidade de São Paulo, onde mergulhei fundo na exploração de diferentes técnicas e estilos. Minha jornada artística está apenas começando, mas já sinto uma paixão ardente por misturar elementos tradicionais com uma perspectiva contemporânea. Cada pincelada e cada traço refletem minha curiosidade incessante sobre as questões que nos cercam, sejam elas sociais, culturais ou pessoais. Atualmente, estou estabelecida em São Paulo, onde me envolvo em projetos comunitários, buscando inspiração e colaboração em cada esquina desta cidade vibrante. Estou ansiosa para compartilhar minha arte com o mundo e ver aonde essa jornada me levará.</p>
                 </div>
             </div>
-            <div id="profile-rating"></div>
+            <div id="profile-rating">
+                <div id="profile-rating-stars">
+                    <h3>Avaliação</h3>
+                    <div class="rating">
+                        <input type="radio" id="star-1" name="star-radio" value="star-1">
+                        <label for="star-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                        <input type="radio" id="star-2" name="star-radio" value="star-1">
+                        <label for="star-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                        <input type="radio" id="star-3" name="star-radio" value="star-1">
+                        <label for="star-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                        <input type="radio" id="star-4" name="star-radio" value="star-1">
+                        <label for="star-4">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                        <input type="radio" id="star-5" name="star-radio" value="star-1">
+                        <label for="star-5">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                      </div>
+                </div>
+                <div id="profile-rating-stats">
+                    <h3>Estatísticas</h3>
+                    <p>Número de <b>Vendas:</b> placeholder</p>
+                    <p>Número de <b>Obras:</b> placeholder</p>
+                    <p><b>Última Atualização:</b> placeholder</p>
+                </div>
+            </div>
         </div>
     </body>
     <footer>
