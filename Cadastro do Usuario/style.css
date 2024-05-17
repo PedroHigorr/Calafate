@@ -140,6 +140,8 @@
         página cadastro de usuários 
     */
 
+   
+
     .container{
         padding: 5%;
         display: flex;
@@ -156,7 +158,7 @@
         font-weight: 600;        
     }
 
-    input[type=email],[type=password],[type=text] {
+    input[type=email],[type=password],[type=text], [type=number], [type=date] {
         width: 60%;
         padding: 5px 10px;
         border-radius: 3px;
@@ -233,3 +235,116 @@
         color:#000;
         font-weight: 600;
     }
+
+     /* 
+        incremento 15/05/2024
+        página cadastro de obras de arte
+    */
+
+    textarea{
+        width: 90%;
+        height: 100px;
+        resize:none;
+        padding: 5px 10px;
+        border-radius: 3px;
+        font-size: 18px;
+        margin: 3px 0 16px 0;       
+        background-color: #fff;
+        color:#000;
+    }
+
+    #containerRegWork{
+        width: 100%;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    #containerRegWork > div  {
+        width: 750px;
+        height: 800px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #table{
+        width: 750px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #selectFile{
+        width: 200px;
+        height: 40px;
+        background-color: #302D2E;
+        align-items: center;  
+        justify-content: center; 
+        border-radius: 10px;
+        margin: 0 0 15px 0;
+    }
+
+    #send {
+        width: 120px;
+        height: 40px;
+        background-color: #302D2E;
+        align-items: center;  
+        justify-content: center; 
+        border-radius: 10px; 
+    }
+
+
+    #selectFile p {
+        height: 20px;
+        font-size: 18px;
+        text-decoration: underline;
+        color: #fff;
+        background-color: #302D2E;
+        margin: 8px 25px;
+
+    }
+
+    #send p {
+        height: 20px;
+        font-size: 25px;
+        color: #fff;
+        background-color: #302D2E;
+        margin: 0 25px;    
+    }
+
+    #Form {
+        width: 750px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 30px;
+        align-items: center;
+    }
+
+    #regWork {
+        width: 250px;
+    }
+
+    #colun1, #colun2 {
+        margin: 20px;
+        width: 450px;
+        height: 450px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+              
+    }
+
+    #Form, lable, input, textarea, #table, h2, p{
+        background-color: #fff;
+    }
+
+    #colun1 input, #colun2 input {
+        height: 20px;
+        width: 300px;
+        
+    }
+
