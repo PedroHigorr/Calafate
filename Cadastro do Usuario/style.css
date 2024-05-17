@@ -302,7 +302,7 @@
         text-decoration: underline;
         color: #fff;
         background-color: #302D2E;
-        margin: 8px 25px;
+        margin: 8px 0;
 
     }
 
@@ -311,7 +311,7 @@
         font-size: 25px;
         color: #fff;
         background-color: #302D2E;
-        margin: 0 25px;    
+        margin: 0 25px 10px ;    
     }
 
     #Form {
