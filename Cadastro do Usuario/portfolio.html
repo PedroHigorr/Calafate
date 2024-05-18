@@ -447,6 +447,55 @@
                 }
             }
         }
+
+        #body-footer {
+            background-color: #302D2E;
+            width: 100%;
+            height: 100%;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            /*p, div {
+                background-color: #302D2E;
+                color: #fff;
+            }*/
+
+            #footer-about {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 10%;
+
+                p {
+                    display: flex;
+                    align-self: center;
+                    border-bottom-style: solid;
+                    padding: 0 0 10px 0;
+                    
+                }
+
+                #footer-about-links {
+                    margin-top: 10px;
+                    width: auto;
+
+                    * {
+                        padding: 0 5px 10px 5px;
+                    }
+                }
+            }
+
+            #footer-copyright,
+            #footer-help {
+                display: flex;
+                align-items: center;
+            }
+
+            #footer-help {
+                margin-right: 10%;
+            }
+        }
     </Style>
     
 </head>
@@ -561,8 +610,34 @@
             </div>
         </div>
     </body>
-    <footer>
-
+    <footer id="body-footer">
+        <div id="footer-about">
+            <p>Sobre nós</p>
+            <div id="footer-about-links">
+                <nav>
+                    <a href="">
+                        <img class="body-footer-imgs" src="img/Logo Instagram.svg" alt="Instagram logo">
+                    </a>
+                    <a href="">
+                        <img class="body-footer-imgs" src="img/pinterest-logo.svg" alt="Pinterest logo">
+                    </a>
+                    <a href="">
+                        <img class="body-footer-imgs" src="img/facebook-logo.svg" alt="Facebook logo">
+                    </a>
+                    <a href="">
+                        <img class="body-footer-imgs" src="img/Twitter-logo.svg" alt="Twitter logo">
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <div id="footer-copyright">
+            <p>Copyright @ 2024 Grupo Santander</p>
+        </div>
+        <div id="footer-help">
+            <nav>
+                <a href="">Central de Ajuda</a>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>
