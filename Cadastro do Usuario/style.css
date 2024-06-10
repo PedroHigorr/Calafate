@@ -348,3 +348,215 @@
         
     }
 
+    section1 div, a, h5, li, svg{
+        background-color: white;
+    }
+
+    section2 div, a, h1, li, span, svg{
+        background-color: white;
+    }
+
+    section1a{
+        width: 280px;
+    }
+
+    /* estrelas */
+
+    .rating {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 0.3rem;
+        --stroke: #666;
+        --fill: #02D2E;
+      }
+      
+      .rating input {
+        appearance: unset;
+      }
+      
+      .rating label {
+        cursor: pointer;
+      }
+      
+      .rating svg {
+        width: 2rem;
+        height: 2rem;
+        overflow: visible;
+        fill:rgb(206, 209, 209);
+        stroke: var(--fill);
+        stroke-linejoin: bevel;
+        stroke-dasharray: 12;
+        animation: idle 4s linear infinite;
+        transition: stroke 0.2s, fill 0.5s;
+      }
+      
+      @keyframes idle {
+        from {
+          stroke-dashoffset: 24;
+        }
+      }
+      
+      .rating label:hover svg {
+        stroke: var(--fill);
+      }
+      
+      .rating input:checked ~ label svg {
+        transition: 0s;
+        animation: idle 4s linear infinite, yippee 0.75s backwards;
+        fill: var(--fill);
+        stroke: var(--fill);
+        stroke-opacity: 0;
+        stroke-dasharray: 0;
+        stroke-linejoin: miter;
+        stroke-width: 8px;
+      }
+      
+      @keyframes yippee {
+        0% {
+          transform: scale(1);
+          fill: var(--fill);
+          fill-opacity: 0;
+          stroke-opacity: 1;
+          stroke: var(--stroke);
+          stroke-dasharray: 10;
+          stroke-width: 1px;
+          stroke-linejoin: bevel;
+        }
+      
+        30% {
+          transform: scale(0);
+          fill: var(--fill);
+          fill-opacity: 0;
+          stroke-opacity: 1;
+          stroke: var(--stroke);
+          stroke-dasharray: 10;
+          stroke-width: 1px;
+          stroke-linejoin: bevel;
+        }
+      
+        30.1% {
+          stroke: var(--fill);
+          stroke-dasharray: 0;
+          stroke-linejoin: miter;
+          stroke-width: 8px;
+        }
+      
+        60% {
+          transform: scale(1.2);
+          fill: var(--fill);
+        }
+      }
+      
+/*fim estilo estrelas*/
+.section hr{
+width: 300px;
+}
+
+.section h1{
+    font-size: 18px;
+}
+
+.section p{
+    font-size: 15px;
+    margin: 0 10px 0 0;
+}
+
+.section input{
+    border: none;
+}
+
+.section #description{
+    margin: 10px 0 20px 0;
+    display: flex;
+}
+
+#value{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 20px;
+}
+
+#addcar{
+    width: 280px;
+    height: 45px;
+    background-color: #302D2E;
+    padding: 16px 0 0 0;
+}
+
+#addcar p{
+    color: #fff;
+    align-items: center;
+    background-color: #302D2E;
+
+}
+
+section1b button{
+    margin: 10px;
+}
+
+#autor{
+    display: flex;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+#autname {
+    text-decoration:underline ;    
+}
+
+#worktype{
+    display: flex;
+    font-weight: 500;
+    justify-content: space-around;
+}
+
+#chat div, #chat div p{
+    background-color: #706f6f;
+    color:#fff
+}
+
+#chat div{
+    width: 200px;
+    height: 30px;
+    padding: 4px;
+    border: none;
+}
+
+#chat{
+    margin: 10px 45px;
+}
+
+#contact{
+    padding: 10px;
+}
+
+#optionpaymant{
+    display: flex;
+    font-size: 9px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.icons, #icon{
+    display: flex;
+    width: 32px;
+    background-color: #fff;   
+}
+
+#icon{
+    width: 210px;
+    margin: 10px 55px;
+    justify-content: space-between;
+}
+
+#feedback{
+    width: 600px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+}
+
+
+
