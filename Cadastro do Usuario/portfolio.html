@@ -316,6 +316,7 @@
             padding: 2px 16px;
             background-color: white;
             margin-top: 10px;
+            margin-bottom: 10px;
         }
         /*Fim do body do modal*/
 
@@ -345,6 +346,7 @@
 
                 h3, p {
                     background-color: #fff;
+                    margin-top: 3%;
                 }
 
                 /*Animação das estrelas*/
@@ -440,12 +442,29 @@
 
             #profile-rating-stats {
                 background-color: #fff;
-                margin-bottom: 10px;
+                margin-bottom: 3%;
 
                 h3, p, b {
                     background-color: #fff;
                 }
             }
+        }
+
+        #product-title-sell,
+        #product-title-all {
+            color: #fff;
+            margin-top: 50px;
+            margin-bottom: 15px;
+            margin-left: 5%;
+        }
+
+        #slider-product-sell,
+        #slider-product-all {
+            background-color: aqua;
+            width: 90%;
+            height: 700px;
+            margin-right: 5%;
+            margin-left: 5%;
         }
 
         #body-footer {
@@ -456,19 +475,20 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-
-            /*p, div {
-                background-color: #302D2E;
-                color: #fff;
-            }*/
+            padding: 25px 0 25px 0;
 
             #footer-about {
+                background-color: #302D2E;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 margin-left: 10%;
+                /*margin-top: 50px;
+                margin-bottom: 50px;*/
 
                 p {
+                    background-color: #302D2E;
+                    color: #fff;
                     display: flex;
                     align-self: center;
                     border-bottom-style: solid;
@@ -479,21 +499,49 @@
                 #footer-about-links {
                     margin-top: 10px;
                     width: auto;
+                    background-color: #302D2E;
 
                     * {
                         padding: 0 5px 10px 5px;
                     }
+
+                    nav {
+                        background-color: #302D2E;
+
+                        a {
+                        background-color: #302D2E;
+
+                            img {
+                                background-color: #302D2E;
+                            }
+                        }
+                    }
                 }
             }
 
-            #footer-copyright,
-            #footer-help {
+            #footer-copyright {
                 display: flex;
                 align-items: center;
+                background-color: #302D2E;
+                color: #fff;
+
+                p {
+                    background-color: #302D2E;
+                    color: #fff;
+                }
             }
 
             #footer-help {
+                background-color: #302D2E;
+                color: #fff;
+                display: flex;
+                align-items: center;
                 margin-right: 10%;
+
+                a {
+                    background-color: #302D2E;
+                    color: #fff;
+                }
             }
         }
     </Style>
@@ -609,6 +657,10 @@
                 </div>
             </div>
         </div>
+        <h1 id="product-title-sell">OBRAS À VENDA</h1>
+        <div id="slider-product-sell"></div>
+        <h1 id="product-title-all">TODAS AS OBRAS</h1>
+        <div id="slider-product-all"></div>
     </body>
     <footer id="body-footer">
         <div id="footer-about">
