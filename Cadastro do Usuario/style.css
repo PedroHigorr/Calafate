@@ -146,7 +146,7 @@
         padding: 5%;
         display: flex;
         flex-direction: column;
-        width: 70%;
+        width: 500px;
         height: 400px;
         background-color: white;
         margin: 5% 10%  
@@ -198,7 +198,7 @@
         display: flex;
         align-items: baseline;
         background-color: #fff;
-        margin: 10px 0 0 0;
+        margin: 0 0 10px 0;
         font-weight: 500;
         
     }
@@ -215,14 +215,14 @@
     #botton p{
         background-color: #302D2E;
         color:#fff;
-        font-size: 30px;
-        border-radius: 15px;
+        font-size: 25px;
+        border-radius: 10px;
         padding: 0 10px;
-        width: 224px;
+        width: 80px;
     }
 
     .entrar, .login, .forgotpass{
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 500;
         margin: 0 0 0 20px
         
@@ -236,10 +236,63 @@
         font-weight: 600;
     }
 
+    #terms{
+        font-size: 14px;
+    }
+
+    #createacount{
+        width: 170px;
+        height: 30px;
+        background-color: #302D2E;
+        color:#fff;        
+        border-radius: 10px;
+        padding: 0 10px;
+        margin: 10px 0;        
+    }
+
+    #createacount p{
+        width: 150px;
+        background-color: #302D2E;
+        font-size: 16px;
+    }
+
+
      /* 
         incremento 15/05/2024
         página cadastro de obras de arte
     */
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 60px;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    section1 {
+        display: flex; 
+        background-color: white;
+        width: 700px;
+        height: 650px;
+               
+    }
+
+    section2 {
+        background-color: white;
+        width: 700px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;        
+    }
+
+    section1a, section1b{
+        background-color: white;
+        margin: 20px;
+    }
+
+
 
     textarea{
         width: 90%;
@@ -349,14 +402,14 @@
     }
 
     section1 div, a, h5, li, svg{
-        background-color: white;
+        background-color: white;                   
     }
 
     section2 div, a, h1, li, span, svg{
         background-color: white;
     }
 
-    section1a{
+    section1a, section1b{
         width: 280px;
     }
 
@@ -449,6 +502,7 @@
       }
       
 /*fim estilo estrelas*/
+
 .section hr{
 width: 300px;
 }
@@ -532,22 +586,25 @@ section1b button{
 }
 
 #optionpaymant{
+    width: 300px;
     display: flex;
     font-size: 9px;
     text-align: center;
     justify-content: space-between;
 }
 
-.icons, #icon{
+.icons{
     display: flex;
     width: 32px;
     background-color: #fff;   
 }
 
 #icon{
-    width: 210px;
+    width: 200px;
+    display: flex;
     margin: 10px 55px;
     justify-content: space-between;
+    background-color: #fff; 
 }
 
 #feedback{
@@ -555,8 +612,38 @@ section1b button{
     height: 160px;
     display: flex;
     flex-direction: column;
-    padding: 30px 50px;
+    padding: 30px 50px 0 ;
 }
 
+#sendcomment {
+    width: 80px;
+    height: 30px;
+    margin: 0 0 0 530px;    
+}
 
+#sendcomment button{
+    background-color: #a6a0a0;
+    width: 80px;
+    height: 30px;
+}
 
+#sendcomment p{
+    background-color: #a6a0a0;
+    color:#fff;
+}
+
+#separatesection2{
+    width: 550px;
+    margin: 60px 0 30px 50px;
+}
+
+#comments{
+    width: 480px;
+    margin: 0 15px;
+}
+
+#section2b{
+    display: flex;
+    flex-direction: row;
+    margin: 0 50px;
+}

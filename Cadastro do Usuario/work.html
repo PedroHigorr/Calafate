@@ -5,39 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Calafate</title>  
-    <style>
-        section1, section2 {
-            background-color: white;
-            width: 700px;
-            display: flex;
-            
-        }
-
-        section1 {
-            height: 650px;
-        }
-
-        section2 {
-            height: 400px;
-        }
-
-        main {
-            display: flex;
-            flex-direction: column;
-            margin: 60px;
-            gap: 30px;
-            align-items: center;
-            justify-content: center;
-        }
-
-        section1a, section1b{
-            background-color: white;
-            margin: 20px;
-        }
-
-     
-    </style>
-    
+        
 </head>
 <body>
     <header>
@@ -79,7 +47,7 @@
      <main>
         <section1>
             <section1a>
-                <h5 style= margin: 20px;" class="artist-type">nome> tipo</h5>
+                <h5 style="margin:20px;" class="artist-type">nome> tipo</h5>
                 <div id="img" style=" margin: 30px 80px;" >
                     <img style="width: 140px; height: 160px; "  src="https://www.artmajeur.com/medias/standard/i/g/igor-shulman/artwork/17846518_img-9197.jpg">
                     
@@ -201,16 +169,27 @@
         <section2>
             <div id="feedback">
                 <lable for="coment">Adicionar comentário</lable>
-                <textarea name="comentario" id="coment">
+                <textarea name="comentario" id="coment"></textarea>
             </div>
-            
-            
-                <div>
-                    <p>Enviar</p>
-                </div>
-            
-            
 
+            <div id="sendcomment">                
+                <button>
+                    <P>Enviar</P>
+                </button>                     
+            </div>
+
+            <hr id="separatesection2">
+
+            <div id="section2b">
+                <div id="userico">
+                   <img class="icons" src="img/user-svgrepo-com.svg">
+
+                </div>
+            <textarea id="comments">Neste campo será exibido um comentário do cliente que decidiu avaliar a obra  </textarea>
+            </div>
+           
+            
+        
         </section2>
      </main>
 </body>
