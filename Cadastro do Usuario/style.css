@@ -647,3 +647,35 @@ section1b button{
     flex-direction: row;
     margin: 0 50px;
 }
+
+.userfeedback{
+    display: flex;
+    height: 20px;
+    background-color: #fff;
+}
+
+.userfeedback div {
+    align-items: flex-start;
+    width: 210px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    border-radius: 10px;
+    background-color: #e0dede;   
+}
+
+.userfeedback div div{
+    background-color: rgb(255, 225, 143);
+    
+}
+
+div.qlt{
+    width:90% ;
+}
+
+div.usrfb{
+    width: 70%;
+}
+
+div.shpp{
+    width: 45%;
+}
