@@ -3,11 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <!--CSS-->
     <link rel="stylesheet" href="/Cadastro do Usuario/style.css">
+    
+    <!--CSS-do-Portfolio-->
     <link rel="stylesheet" href="css/portfolio.css">
-    <title>Calafate</title>
+    
+    <!--GLIDER-CSS-->
+    <link rel="stylesheet" href="css/glider.min.css">
+
+    <!--GLIDER-CSS-PESSOAL-->
+    <link rel="stylesheet" href="css/glider.style.css">
+
+    <!--GLIDER-JS-->
+    <script src="src/glider.min.js"></script>
+
 </head>
 <body>
+    <!--
+    
+$$\   $$\                           $$\                     
+$$ |  $$ |                          $$ |                    
+$$ |  $$ | $$$$$$\   $$$$$$\   $$$$$$$ | $$$$$$\   $$$$$$\  
+$$$$$$$$ |$$  __$$\  \____$$\ $$  __$$ |$$  __$$\ $$  __$$\ 
+$$  __$$ |$$$$$$$$ | $$$$$$$ |$$ /  $$ |$$$$$$$$ |$$ |  \__|
+$$ |  $$ |$$   ____|$$  __$$ |$$ |  $$ |$$   ____|$$ |      
+$$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |      
+\__|  \__| \_______| \_______| \_______| \_______|\__|      
+                                                            
+    -->
     <header>
         <nav>
             <img class="left-logo" id="Calafate" src="img/calafate-logo.svg" alt="Calafate Logo">
@@ -28,29 +55,45 @@
         </nav>
         <footer>
             <nav>
-                <a id="paints" href="pinturas.html">Pinturas</a>
-                <a href="esculturas.html"> Esculturas</a>
-                <a href="fotografias.html">Fotografias </a>
-                <a href="desenhos.htmkl"> Desenhos </a>
-                <a href="impressoesGravuras.html"> Impressões e Gravuras</a>
-                <a href="artesDigitais.html"> Artes Digitais</a>
-                <a href="colagens.html"> Colagens</a>
-                <a href="textos.html"> Artes Têxtil</a>
-                <a href="design.html"> Design</a>
+                <a id="paints" href="#">Pinturas</a>
+                <a href="#"> Esculturas</a>
+                <a href="#">Fotografias </a>
+                <a href="#"> Desenhos </a>
+                <a href="#"> Impressões e Gravuras</a>
+                <a href="#"> Artes Digitais</a>
+                <a href="#"> Colagens</a>
+                <a href="#"> Artes Têxtil</a>
+                <a href="#"> Design</a>
             </nav>
         </footer>
     </header>
     <body>
+        <!--
+        
+ $$$$$$\            $$\                                  $$$$$$\             $$\     $$\             $$\               
+$$  __$$\           $$ |                                $$  __$$\            $$ |    \__|            $$ |              
+$$ /  \__| $$$$$$\  $$$$$$$\   $$$$$$\   $$$$$$\        $$ /  $$ | $$$$$$\ $$$$$$\   $$\  $$$$$$$\ $$$$$$\    $$$$$$\  
+\$$$$$$\  $$  __$$\ $$  __$$\ $$  __$$\ $$  __$$\       $$$$$$$$ |$$  __$$\\_$$  _|  $$ |$$  _____|\_$$  _|   \____$$\ 
+ \____$$\ $$ /  $$ |$$ |  $$ |$$ |  \__|$$$$$$$$ |      $$  __$$ |$$ |  \__| $$ |    $$ |\$$$$$$\    $$ |     $$$$$$$ |
+$$\   $$ |$$ |  $$ |$$ |  $$ |$$ |      $$   ____|      $$ |  $$ |$$ |       $$ |$$\ $$ | \____$$\   $$ |$$\ $$  __$$ |
+\$$$$$$  |\$$$$$$  |$$$$$$$  |$$ |      \$$$$$$$\       $$ |  $$ |$$ |       \$$$$  |$$ |$$$$$$$  |  \$$$$  |\$$$$$$$ |
+ \______/  \______/ \_______/ \__|       \_______|      \__|  \__|\__|        \____/ \__|\_______/    \____/  \_______|
+                                                                                                                       
+
+        -->
         <div id="user-bio">
             <div id="profile-main">
-                <div id="profile-img">placeholder</div>
+                <div id="profile-img">
+                    <!--Para trocar a foto de perfil-->
+                    <img src="img/perfil-teste.svg" alt="foto de perfil">
+                </div>
                 <div id="profile-text">
+                    <!--Nome do perfil-->
                     <h1 id="user-name">Luiza Fagundes</h1>
                     <div id="user-btns">
                         <button id="user-btns-follow"><img class="art-fav-shop" src="img/fav-logo.svg" alt="Favorite Icon"><p>Seguir</p></button>
                         <button id="user-btns-chat"><img src="img/chat-logo.svg" alt="Chat Icon"></button>
                         <button id="user-btns-more"><p>•••</p></button>
-                        
                     </div>
                     <div id="links-text">
                         <nav>
@@ -80,6 +123,7 @@
                         </div>
                         <script src="./src/links-modal.js"></script>
                     </div>
+                    <!--para mudar o texto da bio-->
                     <p id="user-bio-text">Meu nome é Luiza Fagundes e sou uma artista visual brasileira, em busca de minha própria voz criativa neste vasto mundo da arte. Recebi meu diploma em Belas Artes pela Universidade de São Paulo, onde mergulhei fundo na exploração de diferentes técnicas e estilos. Minha jornada artística está apenas começando, mas já sinto uma paixão ardente por misturar elementos tradicionais com uma perspectiva contemporânea. Cada pincelada e cada traço refletem minha curiosidade incessante sobre as questões que nos cercam, sejam elas sociais, culturais ou pessoais. Atualmente, estou estabelecida em São Paulo, onde me envolvo em projetos comunitários, buscando inspiração e colaboração em cada esquina desta cidade vibrante. Estou ansiosa para compartilhar minha arte com o mundo e ver aonde essa jornada me levará.</p>
                 </div>
             </div>
@@ -111,17 +155,527 @@
                 </div>
                 <div id="profile-rating-stats">
                     <h3>Estatísticas</h3>
+                    <!--para mudar as estatísticas-->
                     <p>Número de <b>Vendas:</b> placeholder</p>
                     <p>Número de <b>Obras:</b> placeholder</p>
                     <p><b>Última Atualização:</b> placeholder</p>
                 </div>
             </div>
         </div>
-        <h1 id="product-title-sell">OBRAS À VENDA</h1>
-        <div id="slider-product-sell"></div>
-        <h1 id="product-title-all">TODAS AS OBRAS</h1>
-        <div id="slider-product-all"></div>
+        
+
+        
+        <!-- 
+
+ $$$$$$\  $$\ $$\       $$\                             $$\   
+$$  __$$\ $$ |\__|      $$ |                          $$$$ |  
+$$ /  \__|$$ |$$\  $$$$$$$ | $$$$$$\   $$$$$$\        \_$$ |  
+\$$$$$$\  $$ |$$ |$$  __$$ |$$  __$$\ $$  __$$\         $$ |  
+ \____$$\ $$ |$$ |$$ /  $$ |$$$$$$$$ |$$ |  \__|        $$ |  
+$$\   $$ |$$ |$$ |$$ |  $$ |$$   ____|$$ |              $$ |  
+\$$$$$$  |$$ |$$ |\$$$$$$$ |\$$$$$$$\ $$ |            $$$$$$\ 
+ \______/ \__|\__| \_______| \_______|\__|            \______|
+                                                              
+    -->
+
+        <!--SLIDER-1-->
+        <section class="p-slider">
+
+        <!--HEADER-->
+        <div class="product-slider-heading-div">
+            <h3 class="product-slider-heading">Obras à Venda</h3>
+        </div>
+
+        <div class="glider-contain">
+
+            <!--btn-Left-->
+            <div class="slider-btns">
+                <button aria-label="Previous" class="glider-prev">
+                    <span>◀</span>
+                </button>
+            </div>
+
+            <div class="glider">
+
+                <!--PRODUCT-BOX1-->
+                <div class="product-box">
+
+                    <!--FAVORITE-BUTTON-->
+                    <div class="favorite-btn">
+                        <button>
+                            <img src="img/Coracao.png" alt="favoritar">
+                        </button>
+                    </div>
+
+                    <!--PRODUCT-BOX-->
+                    <div class="p-img-container">
+                        <div class="p-img">
+                            <a href="#">
+                                <img src="img/Velho.png" class="p-img-front" alt="velho">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--TEXT-->
+                    <div class="p-box-text">
+                        <!--category-->
+                        <div class="product-category">
+                            <span>Painting</span>
+                        </div>
+
+                        <!--Title-->
+                        <a href="#" class="product-title">Head of an Old Man</a>
+
+                        <!--price-buy-->
+                        <div class="price-buy">
+                            <span class="p-price">R$ 250,00</span>
+                            <a href="#" class="p-buy-btn">Comprar</a>
+                        </div>
+                    </div>
+                </div> 
+                
+                <!--PRODUCT-BOX2-->
+                <div class="product-box">
+
+                    <!--FAVORITE-BUTTON-->
+                    <div class="favorite-btn">
+                        <button>
+                            <img src="img/Coracao.png" alt="favoritar">
+                        </button>
+                    </div>
+
+                    <!--PRODUCT-BOX-->
+                    <div class="p-img-container">
+
+                        <div class="p-img">
+
+                            <a href="#">
+                                <img src="img/Paisagem.png" class="p-img-front" alt="Paisagem">                                
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--TEXT-->
+                    <div class="p-box-text">
+                        <!--category-->
+                        <div class="product-category">
+                            <span>Painting</span>
+                        </div>
+
+                        <!--Title-->
+                        <a href="#" class="product-title">Landscape at Twilight</a>
+
+                        <!--price-buy-->
+                        <div class="price-buy">
+                            <span class="p-price">R$ 500,00</span>
+                            <a href="#" class="p-buy-btn">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PRODUCT-BOX3-->
+                <div class="product-box">
+
+                    <!--FAVORITE-BUTTON-->
+                    <div class="favorite-btn">
+                        <button>
+                            <img src="img/Coracao.png" alt="favoritar">
+                        </button>
+                    </div>
+
+                    <!--PRODUCT-BOX-->
+                    <div class="p-img-container">
+
+                        <div class="p-img">
+
+                            <a href="#">
+                                <img src="img/NoiteEstrelada.png" class="p-img-front" alt="NoiteEstrelada">                                
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--TEXT-->
+                    <div class="p-box-text">
+                        <!--category-->
+                        <div class="product-category">
+                            <span>Painting</span>
+                        </div>
+
+                        <!--Title-->
+                        <a href="#" class="product-title">The Starry Night</a>
+
+                        <!--price-buy-->
+                        <div class="price-buy">
+                            <span class="p-price">R$ 1000,00</span>
+                            <a href="#" class="p-buy-btn">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PRODUCT-BOX4-->
+                <div class="product-box">
+
+                    <!--FAVORITE-BUTTON-->
+                    <div class="favorite-btn">
+                        <button>
+                            <img src="img/Coracao.png" alt="favoritar">
+                        </button>
+                    </div>
+
+                    <!--PRODUCT-BOX-->
+                    <div class="p-img-container">
+
+                        <div class="p-img">
+
+                            <a href="#">
+                                <img src="img/Esqueleto.png" class="p-img-front" alt="Esqueleto">                                
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--TEXT-->
+                    <div class="p-box-text">
+                        <!--category-->
+                        <div class="product-category">
+                            <span>Painting</span>
+                        </div>
+
+                        <!--Title-->
+                        <a href="#" class="product-title">Skull of a Skeleton with Burning Cigarette</a>
+
+                        <!--price-buy-->
+                        <div class="price-buy">
+                            <span class="p-price">R$ 450,00</span>
+                            <a href="#" class="p-buy-btn">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PRODUCT-BOX5-->
+                <div class="product-box">
+
+                    <!--FAVORITE-BUTTON-->
+                    <div class="favorite-btn">
+                        <button>
+                            <img src="img/Coracao.png" alt="favoritar">
+                        </button>
+                    </div>
+
+                    <!--PRODUCT-BOX-->
+                    <div class="p-img-container">
+
+                        <div class="p-img">
+
+                            <a href="#">
+                                <img src="img/Barcos.png" class="p-img-front" alt="Barcos">                                
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--TEXT-->
+                    <div class="p-box-text">
+                        <!--category-->
+                        <div class="product-category">
+                            <span>Painting</span>
+                        </div>
+
+                        <!--Title-->
+                        <a href="#" class="product-title">A Cidade</a>
+
+                        <!--price-buy-->
+                        <div class="price-buy">
+                            <span class="p-price">R$ 2378,00</span>
+                            <a href="#" class="p-buy-btn">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+            <!--btn-Right-->
+            <div class="slider-btns">
+                <button aria-label="Next" class="glider-next">
+                    <span>▶</span>
+                </button>
+            </div>
+          </div>
+
+
+    </section>
+
+    <!-- 
+    
+ $$$$$$\  $$\ $$\       $$\                            $$$$$$\  
+$$  __$$\ $$ |\__|      $$ |                          $$  __$$\ 
+$$ /  \__|$$ |$$\  $$$$$$$ | $$$$$$\   $$$$$$\        \__/  $$ |
+\$$$$$$\  $$ |$$ |$$  __$$ |$$  __$$\ $$  __$$\        $$$$$$  |
+ \____$$\ $$ |$$ |$$ /  $$ |$$$$$$$$ |$$ |  \__|      $$  ____/ 
+$$\   $$ |$$ |$$ |$$ |  $$ |$$   ____|$$ |            $$ |      
+\$$$$$$  |$$ |$$ |\$$$$$$$ |\$$$$$$$\ $$ |            $$$$$$$$\ 
+ \______/ \__|\__| \_______| \_______|\__|            \________|
+
+    -->
+
+    <!--SLIDER-2-->
+    <section class="p-slider">
+
+        <!--HEADER-->
+        <div class="product-slider-heading-div">
+            <h3 class="product-slider-heading">Todas as Obras</h3>
+        </div>
+
+        <div class="glider-contain">
+
+            <!--btn-Prev-->
+            <div class="slider-btns">
+                <button aria-label="Previous" class="placeholder-prev">
+                    <span>◀</span>
+                </button>
+            </div>
+
+            <div class="placeholder">
+
+                <!--PRODUCT-BOX1-->
+                <div class="product-box">
+
+                    <!--FAVORITE-BUTTON-->
+                    <div class="favorite-btn">
+                        <button>
+                            <img src="img/Coracao.png" alt="favoritar">
+                        </button>
+                    </div>
+
+                    <!--PRODUCT-BOX-->
+                    <div class="p-img-container">
+
+                        <div class="p-img">
+
+                            <a href="#">
+                                <img src="img/Velho.png" class="p-img-front" alt="velho">
+                                
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--TEXT-->
+                    <div class="p-box-text">
+                        <!--category-->
+                        <div class="product-category">
+                            <span>Painting</span>
+                        </div>
+
+                        <!--Title-->
+                        <a href="#" class="product-title">Head of an Old Man</a>
+
+                        <!--price-buy-->
+                        <div class="price-buy">
+                            <span class="p-price">R$ 250,00</span>
+                        </div>
+                    </div>
+                </div> 
+                
+                <!--PRODUCT-BOX2-->
+                <div class="product-box">
+
+                    <!--FAVORITE-BUTTON-->
+                    <div class="favorite-btn">
+                        <button>
+                            <img src="img/Coracao.png" alt="favoritar">
+                        </button>
+                    </div>
+
+                    <!--PRODUCT-BOX-->
+                    <div class="p-img-container">
+
+                        <div class="p-img">
+
+                            <a href="#">
+                                <img src="img/Paisagem.png" class="p-img-front" alt="Paisagem">                                
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--TEXT-->
+                    <div class="p-box-text">
+                        <!--category-->
+                        <div class="product-category">
+                            <span>Painting</span>
+                        </div>
+
+                        <!--Title-->
+                        <a href="#" class="product-title">Landscape at Twilight</a>
+
+                        <!--price-buy-->
+                        <div class="price-buy">
+                            <span class="p-price">R$ 500,00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PRODUCT-BOX3-->
+                <div class="product-box">
+
+                    <!--FAVORITE-BUTTON-->
+                    <div class="favorite-btn">
+                        <button>
+                            <img src="img/Coracao.png" alt="favoritar">
+                        </button>
+                    </div>
+
+                    <!--PRODUCT-BOX-->
+                    <div class="p-img-container">
+
+                        <div class="p-img">
+
+                            <a href="#">
+                                <img src="img/NoiteEstrelada.png" class="p-img-front" alt="NoiteEstrelada">                                
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--TEXT-->
+                    <div class="p-box-text">
+                        <!--category-->
+                        <div class="product-category">
+                            <span>Painting</span>
+                        </div>
+
+                        <!--Title-->
+                        <a href="#" class="product-title">The Starry Night</a>
+
+                        <!--price-buy-->
+                        <div class="price-buy">
+                            <span class="p-price">R$ 1000,00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PRODUCT-BOX4-->
+                <div class="product-box">
+
+                    <!--FAVORITE-BUTTON-->
+                    <div class="favorite-btn">
+                        <button>
+                            <img src="img/Coracao.png" alt="favoritar">
+                        </button>
+                    </div>
+
+                    <!--PRODUCT-BOX-->
+                    <div class="p-img-container">
+
+                        <div class="p-img">
+
+                            <a href="#">
+                                <img src="img/Esqueleto.png" class="p-img-front" alt="Esqueleto">                                
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--TEXT-->
+                    <div class="p-box-text">
+                        <!--category-->
+                        <div class="product-category">
+                            <span>Painting</span>
+                        </div>
+
+                        <!--Title-->
+                        <a href="#" class="product-title">Skull of a Skeleton with Burning Cigarette</a>
+
+                        <!--price-buy-->
+                        <div class="price-buy">
+                            <span class="p-price">R$ 450,00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PRODUCT-BOX5-->
+                <div class="product-box">
+
+                    <!--FAVORITE-BUTTON-->
+                    <div class="favorite-btn">
+                        <button>
+                            <img src="img/Coracao.png" alt="favoritar">
+                        </button>
+                    </div>
+
+                    <!--PRODUCT-BOX-->
+                    <div class="p-img-container">
+
+                        <div class="p-img">
+
+                            <a href="#">
+                                <img src="img/Barcos.png" class="p-img-front" alt="Barcos">                                
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--TEXT-->
+                    <div class="p-box-text">
+                        <!--category-->
+                        <div class="product-category">
+                            <span>Painting</span>
+                        </div>
+
+                        <!--Title-->
+                        <a href="#" class="product-title">A Cidade</a>
+
+                        <!--price-buy-->
+                        <div class="price-buy">
+                            <span class="p-price">R$ 2378,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+            <!--btn-Right-->
+            <div class="slider-btns">
+                <button aria-label="Next" class="placeholder-next">
+                    <span>▶</span>
+                </button>
+            </div>
+          </div>
+
+
+    </section>
+
+    <!--SCRIPT-->
+    <script>        
+        new Glider(document.querySelector('.glider'), {
+        slidesToScroll: 1,
+        slidesToShow: 4,
+        draggable: true,
+        dots: '.dots',
+        arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+        }
+        });
+    </script>
+
+    <script>        
+        new Glider(document.querySelector('.placeholder'), {
+        slidesToScroll: 1,
+        slidesToShow: 4,
+        draggable: true,
+        dots: '.dots',
+        arrows: {
+            prev: '.placeholder-prev',
+            next: '.placeholder-next'
+        }
+        });
+    </script>
     </body>
+    <!--
+    
+$$$$$$$$\                   $$\                         
+$$  _____|                  $$ |                        
+$$ |    $$$$$$\   $$$$$$\ $$$$$$\    $$$$$$\   $$$$$$\  
+$$$$$\ $$  __$$\ $$  __$$\\_$$  _|  $$  __$$\ $$  __$$\ 
+$$  __|$$ /  $$ |$$ /  $$ | $$ |    $$$$$$$$ |$$ |  \__|
+$$ |   $$ |  $$ |$$ |  $$ | $$ |$$\ $$   ____|$$ |      
+$$ |   \$$$$$$  |\$$$$$$  | \$$$$  |\$$$$$$$\ $$ |      
+\__|    \______/  \______/   \____/  \_______|\__|      
+                                                        
+    -->
     <footer id="body-footer">
         <div id="footer-about">
             <p>Sobre nós</p>
