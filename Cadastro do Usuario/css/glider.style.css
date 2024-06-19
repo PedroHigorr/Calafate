@@ -97,6 +97,10 @@ body {
     text-decoration: none;
 }
 
+.product-title:hover {
+    text-decoration: underline;
+}
+
 .price-buy {
     display: flex;
     justify-content: space-between;
