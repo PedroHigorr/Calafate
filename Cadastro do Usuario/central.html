@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ com slideToggle</title>
+    <link rel="stylesheet" href="/Calafate/Cadastro do Usuario/css/style3.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="src/scriptCA.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="left-logo" id="Calafate" src="img/calafate-logo.svg" alt="Calafate Logo">
+            <a id="local" href="address.html">  
+                <img id="localization-logo" src="img/localization-logo.svg" alt="Localization Icon" >
+                <div id="cep"> Informe seu CEP </div>
+            </a>
+            <input type="text" name="searchBar" id="searchBar">
+            <img class="art-fav-shop" src="img/artists-logo.svg" alt="Art Market Icon">
+            <img class="art-fav-shop" src="img/fav-logo.svg" alt="Favorite Icon">
+            <img class="art-fav-shop" src="img/market-logo.svg" alt="Market Icon">
+           
+            <div id="perfil">
+                <div id="enter" class="cad-enter"></div>
+                <a id="ent" href="login.html" class="cad-enter">Entrar/</a>
+                <a id="cad" href="register.html" class="cad-enter">Cadastrar</a>
+                <img src="img/perfil-logo.svg" alt="Profile Icon">
+            </div>
+        </nav>
+    </header>
+
+    <div class="title">
+        <h1>Central de ajuda</h1>
+    </div>
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <button class="category-btn" data-category="category1">Vendedores</button>
+            <button class="category-btn" data-category="category2">Compradores</button>
+            <button class="category-btn" data-category="category3">Minha conta</button>
+            <button class="category-btn" data-category="category4">Em geral</button>
+            <button id="form" p style="color: #fff;">Fale conosco</button>
+            
+        </div>
+        <div class="content">
+            <div id="category1" class="category">
+                <h2>Vendedores</h2>
+                <div class="question">
+                    <h3>Quando receberei meu pagamento depois de vender uma obra de arte original?</h3>
+                    <div class="answer">
+                        <p> Durante uma venda, a Calafate cobra o pagamento do cliente e o retém durante a transação. Uma vez que o cliente recebe a obra, 
+                            ele tem 14 dias para retirar e devolver, então a Calafate lhe envia o pagamento.</p>
+
+                        <p> Você será pago 15 dias após a entrega do trabalho (Se o 15º dia cair em um fim de semana ou feriado, você será pago no próximo dia útil).</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <h3>Como funciona o seguro de entrega?</h3>
+                    <div class="answer">
+                        <p>Todos os pacotes devem ser enviados com rastreamento e seguro. Se você estiver enviando por conta própria, você é responsável pela entrega e deve escolher uma transportadora que forneça rastreamento + seguro. Se você enviar com Artmajeur, nós cuidamos de todos os aspectos da entrega, exceto a embalagem que é de sua responsabilidade.</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <h3>Quando meu novo nome de domínio estará disponível?</h3>
+                    <div class="answer">
+                        <p>Quando você solicita um novo nome de domínio, leva até 48 horas para ser implementado globalmente, dependendo do tipo de domínio (alguns domínios exigem informações pessoais adicionais).
+
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="category2" class="category">
+                <h2>Compradores</h2>
+                <div class="question">
+                    <h3>Quais as condições de uso do cartão de presente Calafate?</h3>
+                    <div class="answer">
+                        <p>Compra: Use seu cartão para comprar produtos em www.calafate.com , salvo exceções especificadas.</p>
+                        <p>Exclusões: O cartão não pode ser usado para comprar outros cartões-presente.</p>
+                        <p>Saldo: O valor das suas compras será deduzido do saldo do cartão, incluindo impostos e despesas de envio.</p>
+                        <p>Compra do Cartão: Nenhuma taxa adicional é aplicada na compra do cartão-presente.</p>
+                        <p>Saldo Insuficiente: Caso suas compras ultrapassem o saldo, a diferença deverá ser paga por outro meio de pagamento disponível na Calafate.</p>
+                        <p>Entrega: Os vales-presente são enviados por e-mail e podem ser de qualquer valor.</p>
+                        <p>Informações do cartão: Calafate pode fornecer informações sobre saldo e data de vencimento mediante solicitação.</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <h3>Quais são as limitações do cartão de presente Calafate?</h3>
+                    <div class="answer">
+                        <p>Isenção de responsabilidade: Calafate não se responsabiliza em caso de uso não autorizado do cartão.</p>
+                        <p>Não Reembolsável: O cartão não é reembolsável nem trocável por dinheiro.</p>
+                        <p>Intransferível: Não pode ser recarregado, revendido ou transferido por dinheiro.</p>
+                        <p>Uso Único: Válido apenas em www.calafate.com .</p>
+                        <p>Expiração: O cartão expira três anos após a compra e o saldo restante torna-se inválido.</p>
+                        <p>Devoluções: Os reembolsos de itens adquiridos com o cartão são creditados em um novo vale-presente.</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <h3>O que ocorre em caso de utilização fraudulenta do cartão de presente Calafate?</h3>
+                    <div class="answer">
+                        <p>Em caso de utilização fraudulenta, a Calafate reserva-se o direito de recusar a transação e encerrar a conta em causa.</p>
+                    </div>
+                </div>
+    
+            </div>
+            <div id="category3" class="category">
+                <h2>Minha conta</h2>
+                <div class="question">
+                    <h3>Como mudar o idioma?</h3>
+                    <div class="answer">
+                        <p>Você pode alterar o idioma principal da sua conta Calafate na seção: MINHA CONTA > CONFIGURAÇÕES .</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <h3>Como bloquear um usuário/seguidor?</h3>
+                    <div class="answer">
+                        <p>Se a pessoa for um de seus seguidores, use a seção: MINHA CONTA > SEGUIDORES > BLOQUEAR</p>
+                        <p>Se a pessoa entrar em contato com você, use o botão acima da mensagem: BLOQUEAR</p>
+                        <p>A pessoa não receberá mais suas atualizações e não poderá mais interagir com você (nem mensagens nem comentários).</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <h3>Como encerrar minha conta?</h3>
+                    <div class="answer">
+                        <p>Para cancelar sua conta:
+                            Minha conta > Configurações > Fechar conta (preencha todos os campos).
+                            Os dados de contas excluídas são excluídos permanentemente e não podem ser recuperados. Sua conta será removida gradualmente do índice do Google automaticamente.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div id="category4" class="category">
+                <h2>Em geral</h2>
+                <div class="question">
+                    <h3>Por que uma conta pode ser suspensa?</h3>
+                    <div class="answer">
+                        <p>Em alguns casos, a equipe de moderação pode ter que suspender um membro porque foi detectada atividade suspeita em sua conta ou ele não respeitou as condições de uso da plataforma.</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <h3>Posso saber por que o usuário está suspenso?</h3>
+                    <div class="answer">
+                        <p>Não, por questões de confidencialidade e segurança, apenas os administradores têm acesso a esta informação, nunca é partilhada com o público. Os casos mais gerais são: 60% SPAM, 20% imagens que exigem filtro familiar, 10% fraudes, 10% violações de outros termos de uso ou relatórios com erro.</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <h3>Uma conta suspensa pode ser reautorizada?</h3>
+                    <div class="answer">
+                        <p>Sim, se a conta foi suspensa após uma denúncia e a investigação do departamento de moderação concluir que não há atividade suspeita, a conta pode ser reativada.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <footer id="body-footer">
+        <div id="footer-about">
+            <p>Sobre nós</p>
+            <div id="footer-about-links">
+                <nav>
+                    <a href="#">
+                        <img class="body-footer-imgs" src="img/Logo Instagram.svg" alt="Instagram logo">
+                    </a>
+                    <a href="#">
+                        <img class="body-footer-imgs" src="img/pinterest-logo.svg" alt="Pinterest logo">
+                    </a>
+                    <a href="#">
+                        <img class="body-footer-imgs" src="img/facebook-logo.svg" alt="Facebook logo">
+                    </a>
+                    <a href="#">
+                        <img class="body-footer-imgs" src="img/Twitter-logo.svg" alt="Twitter logo">
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <div id="footer-copyright">
+            <p>Copyright @ 2024 Grupo Santander</p>
+        </div>
+        <div id="footer-help">
+            <nav>
+                <a href="/Calafate/Cadastro do Usuario/central.html" p style="color: #fff;">Central de Ajuda</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
