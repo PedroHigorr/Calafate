@@ -34,6 +34,34 @@ header nav img {
     max-height: 40px;
 }
 
+header footer {
+    background-color: #4D4D4F;
+    height: auto;
+}
+
+header footer nav{
+    background-color: #4D4D4F;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+   
+        a{
+            background-color: #4D4D4F;
+            text-decoration: none;
+            white-space: nowrap;
+            color: #fff;
+            height: 20px;
+        }
+    
+        #paints{
+            margin-left: 30px;
+        }
+
+}
+
 .left-logo {
     background-color: #302d2e;
     max-height: 140px;
@@ -116,6 +144,7 @@ header footer nav {
 }
 
 .title {
+    color: #fff;
     text-align: center;
     margin-top: 20px; 
 }
@@ -213,4 +242,50 @@ header footer nav {
     align-items: center;
     padding: 20px;
     width: 100%;
+
+    #footer-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10%;
+
+        p {
+            display: flex;
+            align-self: center;
+            border-bottom-style: solid;
+            padding: 10px 100px 10px 100px;
+            color: #fff;
+        }
+
+        #footer-about-links {
+            margin-top: 10px;
+            width: auto;
+
+            * {
+                padding: 0 5px 10px 5px;
+            }
+        }
+    }
+
+    #footer-copyright,
+    #footer-help {
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+
+    #footer-help {
+        margin-right: 10%;
+        padding: 0 0 0 10%;
+
+        a{
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        a:hover{
+            color: #B4A2A4;
+        }
+    }
+}
 }
